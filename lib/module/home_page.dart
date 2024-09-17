@@ -25,25 +25,27 @@ class HomePage extends StatelessWidget {
         backgroundColor: Colors.transparent,
         elevation: 0,
         systemOverlayStyle: SystemUiOverlayStyle.dark,
-        title: Column(
-          children: [
-            Text(
-              "Today",
-              style: GoogleFonts.ubuntu(
-                fontWeight: FontWeight.w500,
-                fontSize: 30,
-                color: Colors.black,
+        title: Center(
+          child: Column(
+            children: [
+              Text(
+                "Today",
+                style: GoogleFonts.ubuntu(
+                  fontWeight: FontWeight.w500,
+                  fontSize: 30,
+                  color: Colors.black,
+                ),
               ),
-            ),
-            Text(
-              formatDate(DateTime.now()),
-              style: GoogleFonts.ubuntu(
-                fontWeight: FontWeight.w400,
-                fontSize: 18,
-                color: Colors.grey,
+              Text(
+                formatDate(DateTime.now()),
+                style: GoogleFonts.ubuntu(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 18,
+                  color: Colors.grey,
+                ),
               ),
-            ),
-          ],
+            ],
+          ),
         ),
       ),
       body: Obx(
